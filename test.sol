@@ -1,0 +1,25 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.8;
+
+contract SimpleContract {
+    int public number;
+
+    User[] public users;
+
+    struct User {
+        string name;
+    }
+
+    function store(int _number) public {
+        number = _number;
+    }
+
+    function getValue() public view returns (int) {
+        return number;
+    }
+
+    function addUser(string memory _name) public {
+        User memory newUser = User({ name: _name});
+        users.push(newUser);
+    }
+}

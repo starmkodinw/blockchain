@@ -11,7 +11,7 @@ contract SimpleContract {
         string name;
     }
 
-    function store(int _number) public {
+    function store(int _number) public virtual {
         number = _number;
     }
 

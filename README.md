@@ -55,3 +55,13 @@ blockchain101
     ช้ากว่า memory
     การแก้ไขข้อมูลใน storage มีค่าใช้จ่าย gas
 - ABI = Application Binary Interface
+- inheritant สืบทอบ class เหมือน JAVA
+    contract Child is Parent {}
+    ถ้าจะ override function => เพิ่ม virtual ใน funtion ของ parent, เพิ่ม override ใน funtion ของ child
+- payable : 
+    function ที่สามารถรับ Ether ได้
+    variable ที่สามารถเก็บ Ether ได้
+    modifier ที่ควบคุมการเข้าถึงฟังก์ชัน
+- reverting : 
+    การยกเลิกธุรกรรม 
+    undo any action before, and send remaining gas back (คืน gas ที่จะใช้ process ต่างๆ หลังจาก require)

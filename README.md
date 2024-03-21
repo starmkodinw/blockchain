@@ -54,3 +54,4 @@ blockchain101
     ใช้ gas น้อยกว่า memory
     ช้ากว่า memory
     การแก้ไขข้อมูลใน storage มีค่าใช้จ่าย gas
+- ABI = Application Binary Interface

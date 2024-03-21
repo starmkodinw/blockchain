@@ -58,10 +58,25 @@ blockchain101
 - inheritant สืบทอบ class เหมือน JAVA
     contract Child is Parent {}
     ถ้าจะ override function => เพิ่ม virtual ใน funtion ของ parent, เพิ่ม override ใน funtion ของ child
-- payable : 
+- payable
     function ที่สามารถรับ Ether ได้
     variable ที่สามารถเก็บ Ether ได้
     modifier ที่ควบคุมการเข้าถึงฟังก์ชัน
-- reverting : 
+- reverting
     การยกเลิกธุรกรรม 
     undo any action before, and send remaining gas back (คืน gas ที่จะใช้ process ต่างๆ หลังจาก require)
+- Oracle
+    smart contract, blockchain มันไม่รู้จักโลกภายนอก ต่อ API ไม่ได้
+    Oracle เป็นตัวกลางเชื่อมต่อระหว่าง blockchain กับ ข้อมูลภายนอก
+    ChainLink
+- Solidity ไม่นิยมใช้ทศนิยมด้วยเหตุผ ความแม่นยำ => ใช้จำนวนเต็มและ subunits แทน
+- msg.value = WEI, msg.sender = from (sender address)
+- library
+    เหมือน contract แต่ประกาศ variable ไม่ได้, send ether ไม่ได้
+    แยก code ออกเป็นส่วนๆ
+- SafeMath ใน solidity version ใหม่ จะ avoid overflow
+    ใส่ uncheck { //do overflow } จะไม่ safe
+- for loop
+    for(uint256 i = 0; i < xxx.length; i++) {
+        <!-- do something -->
+    }

@@ -80,3 +80,8 @@ blockchain101
     for(uint256 i = 0; i < xxx.length; i++) {
         <!-- do something -->
     }
+- constructor() {}
+    เป็นฟังก์ชันพิเศษที่ถูกเรียกอัตโนมัติ เมื่อมีการสร้าง Smart Contract ใหม่
+    ถูกเรียกได้เพียงครั้งเดียว
+    ไม่สามารถ return ค่าใดๆ
+    msg.sender = คน deploy contract = owner

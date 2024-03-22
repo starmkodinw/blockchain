@@ -114,3 +114,20 @@ blockchain101
     //   yes   no
     //  /        \
     //receive()  fallback()
+- observation / question   <------------------
+    -> research topic area                   '
+        -> hypothesis                        '
+            -> test with experiment          '
+                - analyze data               '
+                    - report conclusions ----'
+- HardHat
+- npm vs yarn
+    เป็น package manager จัดการ dependency ของ Javascript
+    yarn พัฒนาโดย Facebook
+        ติดตั้ง package เร็วกว่า npm
+        ใช้พื้นที่เก็บข้อมูลน้อยกว่า npm
+        มี feature มากกว่า npm
+    npm เหมาะสำหรับ project ทั่วไป
+    yarn เหมาะสำหรับ project ที่ต้องการความเร็วและประสิทธิภาพ
+- RPC = remote procedure call
+- Ganache : VISUAL MNEMONIC & ACCOUNT INFO

@@ -85,3 +85,32 @@ blockchain101
     ถูกเรียกได้เพียงครั้งเดียว
     ไม่สามารถ return ค่าใดๆ
     msg.sender = คน deploy contract = owner
+- require(msg.sender == owner, "Sender is not owner");
+- modifier คล้ายๆ middle ware เอาไปใส่ใน function ได้
+    ตำแหน่ง _; มีความสำคัญ
+        // เช็ค require ก่อน ถ้าผ่าน จะทำ process ใน function
+        require();
+        _;
+- constant = const in golang
+    gas ถูกกว่า non-constant 
+- immuable = ไม่เปลี่ยนรูป ใช้ gas ถูกกว่า non-immuable
+- ^0.8.4 => error, revert
+- receiver()
+    เป็น fallback function พิเศษที่ถูกเรียก อัตโนมัติ เมื่อ Smart Contract ได้รับ Ether โดยไม่มี function ใดๆ ถูกเรียก
+    receiver() external payable { 
+        fund();
+    }
+    fallback() external payable { 
+        fund();
+    }
+    // Explainer from: https://solidity-by-example.org/fallback/
+    // Ether is sent to contract
+    //      is msg.data empty?
+    //          /   \ 
+    //         yes  no
+    //         /     \
+    //    receive()?  fallback() 
+    //     /   \ 
+    //   yes   no
+    //  /        \
+    //receive()  fallback()

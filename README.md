@@ -131,3 +131,9 @@ blockchain101
     yarn เหมาะสำหรับ project ที่ต้องการความเร็วและประสิทธิภาพ
 - RPC = remote procedure call
 - Ganache : VISUAL MNEMONIC & ACCOUNT INFO
+- Hardhat:
+    เป็น web3 Framework
+    เหมาะสำหรับผู้เริ่มต้น ใช้งาน Development Environment ครบวงจร
+- Ethers.js:
+    เป็น library
+    เหมาะสำหรับนักพัฒนาที่มีประสบการณ์ ยืดหยุ่นสูง ควบคุม Smart Contract ได้อย่างละเอียด

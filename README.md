@@ -138,3 +138,5 @@ blockchain101
     เป็น library
     เหมาะสำหรับนักพัฒนาที่มีประสบการณ์ ยืดหยุ่นสูง ควบคุม Smart Contract ได้อย่างละเอียด
 - ค่า gas ป้องกัน ​DDOS ได้
+- addr.code.length == 0 แสดงว่าเป็น address ของคน (wallet)
+- addr.code.length != 0 แสดงว่าเป็น address smart contract

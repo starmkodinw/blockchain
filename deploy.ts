@@ -20,7 +20,7 @@ async function main() {
     const contract = await contractFactory.deploy() as any
     await contract.waitForDeployment("1")
     console.log(contract)
-    console.log(contract.BaseContract.target); //CA
+    // console.log(contract.BaseContract.target); //CA
 
     // interact with the contract
     let currentFavoriteNumber = await contract.getValue()
